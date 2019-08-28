@@ -64,19 +64,26 @@ Each of the Pins can be set to one of 4 settings, Off, ON Full, Pulse Width Modu
 
 
 
-Commands
-```
-PCA9530 or PCA9530(Address)
-PCA9531 or PCA9531(Address)
-PCA9532 or PCA9532(Address)
-PCA9533 or PCA9533(Address)
-PCA9550 or PCA9550(Address)
-PCA9551 or PCA9551(Address)
-PCA9552 or PCA9552(Address)
-PCA9553 or PCA9553(Address)
+## Commands
 
+### Variable Assenment
+```
+PCA9530(Address) or PCA9530(Address)
+PCA9531(Address) or PCA9531(Address)
+PCA9532(Address) or PCA9532(Address)
+PCA9533(Address) or PCA9533(Address)
+PCA9550(Address) or PCA9550(Address)
+PCA9551(Address) or PCA9551(Address)
+PCA9552(Address) or PCA9552(Address)
+PCA9553(Address) or PCA9553(Address)
+```
+### Initialization 
+##### (Goes in void setup)
+```
  .begin()
- 
+```
+### Main Command
+```
  .remotedigitalWrite(int pin, uint8_t  output)
 			pin =	(PCA9530 or PCA9550) 0-1;
 					(PCA9531 or PCA9551) 0-7;
@@ -87,14 +94,16 @@ PCA9553 or PCA9553(Address)
 						HIGH	- ON 
 						PWM0 	- Pulse Width Bank 1
 						PWM1	- Pulse Width Bank 2
-						
-		Configure the Pulse Width Bank Configuration
-	Configure the Frequency of Blinking
+```
+### Pulse Width Bank Configuration	
+#### Configure the Frequency of Blinking
+```
  .blinkperiod(float freq, int PSC)
 			PSC =	0 for Pulse Width Configuration 1
 					1 for Pulse Width Configuration 2
-					
-	Configure the Brightness of the LED
+```					
+#### Configure the Brightness of the LED
+```
  .brightness(float duty_cycle, uint8_t PWM)
 			duty_cycle = 0-100%
 			PWM = 	PWM0 for Pulse Width Configuration 1
