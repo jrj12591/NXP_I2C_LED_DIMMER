@@ -20,43 +20,45 @@ A1 | Address | Variable Name
 1 | 0x61 | I2C_ADDRESS_2
 
 #### PCA9531 & PCA9551
-```
-A2,		A1,		A0		Address		Variable Name
-0		0		0		0x60		I2C_ADDRESS_1
-0		0		1		0x61		I2C_ADDRESS_2
-0		1		0		0x62		I2C_ADDRESS_3
-0		1		1		0x63		I2C_ADDRESS_4
-1		0		0		0x64		I2C_ADDRESS_5
-1		0		1		0x65		I2C_ADDRESS_6
-1		1		0		0x66		I2C_ADDRESS_7
-1		1		1		0x67		I2C_ADDRESS_8
-```
-##### PCA9532 & PCA9552
-```
-A2, A1, A0		Address		Variable Name
-0	0	0		0x60		I2C_ADDRESS_1
-0	0	1		0x61		I2C_ADDRESS_2
-0	1	0		0x62		I2C_ADDRESS_3
-0	1	1		0x63		I2C_ADDRESS_4
-1	0	0		0x64		I2C_ADDRESS_5
-1	0	1		0x65		I2C_ADDRESS_6
-1	1	0		0x66		I2C_ADDRESS_7
-1	1	1		0x67		I2C_ADDRESS_8
-```
+A2 | A1 | A0 | Address | Variable Name
+------------ | ------------- | ------------- | ------------- | -------------
+0 | 0 | 0 | 0x60 | I2C_ADDRESS_1
+0 | 0 | 1 | 0x61 | I2C_ADDRESS_2
+0 | 1 | 0 | 0x62 | I2C_ADDRESS_3
+0 | 1 | 1 | 0x63 | I2C_ADDRESS_4
+1 | 0 | 0 | 0x64 | I2C_ADDRESS_5
+1 | 0 | 1 | 0x65 | I2C_ADDRESS_6
+1 | 1 | 0 | 0x66 | I2C_ADDRESS_7
+1 | 1 | 1 | 0x67 | I2C_ADDRESS_8
+### PCA9532 & PCA9552
+A2 | A1 | A0 | Address | Variable Name
+------------ | ------------- | ------------- | ------------- | -------------
+0 | 0 | 0 | 0x60 | I2C_ADDRESS_1
+0 | 0 | 1 | 0x61 | I2C_ADDRESS_2
+0 | 1 | 0 | 0x62 | I2C_ADDRESS_3
+0 | 1 | 1 | 0x63 | I2C_ADDRESS_4
+1 | 0 | 0 | 0x64 | I2C_ADDRESS_5
+1 | 0 | 1 | 0x65 | I2C_ADDRESS_6
+1 | 1 | 0 | 0x66 | I2C_ADDRESS_7
+1 | 1 | 1 | 0x67 | I2C_ADDRESS_8
 
-##### PCA9533/01 & PCA9553/01
-```
-Address		Variable Name
-0x62		I2C_ADDRESS_3
-```
+### PCA9533/01 & PCA9553/01
 
-##### PCA9533/02 & PCA9553/02
-```
-Address		Variable Name
-0x63		I2C_ADDRESS_4
-```
-These chips has two banks of configuration of for the pulse width modulation.
-Each of the 8 Pins can be set to one of 4 settings, Off, ON Full, Pulse Width Modulation Configuration 1, Pulse Width Modulation Configuration 2
+Address | Variable Name
+------------ | -------------
+0x62 | I2C_ADDRESS_3
+
+### PCA9533/02 & PCA9553/02
+
+Address | Variable Name
+------------ | -------------
+0x63 | I2C_ADDRESS_4
+
+
+
+
+Each chip has two banks of configuration of for the pulse width modulation.
+Each of the Pins can be set to one of 4 settings, Off, ON Full, Pulse Width Modulation Configuration 1, Pulse Width Modulation Configuration 2
 
 
 
