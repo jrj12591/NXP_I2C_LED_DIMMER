@@ -1,59 +1,59 @@
 
-#**Library for the 
-#NXP PCA9530 - 2 Bit I2C LED Dimmer
-#NXP PCA9550 - 2 Bit I2C LED Dimmer
-#NXP PCA9531 - 8 Bit I2C LED Dimmer
-#NXP PCA9551 - 8 Bit I2C LED Dimmer
-#NXP PCA9532 - 16 Bit I2C LED Dimmer
-#NXP PCA9553 - 16 Bit I2C LED Dimmer
-#NXP PCA9534 - 4 Bit I2C LED Dimmer
-#NXP PCA9554 - 4 Bit I2C LED Dimmer**
+# **Library for the 
+# NXP PCA9530 - 2 Bit I2C LED Dimmer
+# NXP PCA9550 - 2 Bit I2C LED Dimmer
+# NXP PCA9531 - 8 Bit I2C LED Dimmer
+# NXP PCA9551 - 8 Bit I2C LED Dimmer
+# NXP PCA9532 - 16 Bit I2C LED Dimmer
+# NXP PCA9553 - 16 Bit I2C LED Dimmer
+# NXP PCA9534 - 4 Bit I2C LED Dimmer
+# NXP PCA9554 - 4 Bit I2C LED Dimmer**
 
 
 
-###Use the Following Address:
+### Use the Following Address:
 
-#####PCA9530 & PCA9550
+##### PCA9530 & PCA9550
 ```
 A1 	Address		Variable Name
--0	0x60		I2C_ADDRESS_1
--1	0x61		I2C_ADDRESS_2
+- 0	0x60		I2C_ADDRESS_1
+- 1	0x61		I2C_ADDRESS_2
 ```
-#####PCA9531 & PCA9551
-```
-A2, A1, A0		Address		Variable Name
--0	0	0		0x60		I2C_ADDRESS_1
--0	0	1		0x61		I2C_ADDRESS_2
--0	1	0		0x62		I2C_ADDRESS_3
--0	1	1		0x63		I2C_ADDRESS_4
--1	0	0		0x64		I2C_ADDRESS_5
--1	0	1		0x65		I2C_ADDRESS_6
--1	1	0		0x66		I2C_ADDRESS_7
--1	1	1		0x67		I2C_ADDRESS_8
-```
-#####PCA9532 & PCA9552
+##### PCA9531 & PCA9551
 ```
 A2, A1, A0		Address		Variable Name
--0	0	0		0x60		I2C_ADDRESS_1
--0	0	1		0x61		I2C_ADDRESS_2
--0	1	0		0x62		I2C_ADDRESS_3
--0	1	1		0x63		I2C_ADDRESS_4
--1	0	0		0x64		I2C_ADDRESS_5
--1	0	1		0x65		I2C_ADDRESS_6
--1	1	0		0x66		I2C_ADDRESS_7
--1	1	1		0x67		I2C_ADDRESS_8
+- 0	0	0		0x60		I2C_ADDRESS_1
+- 0	0	1		0x61		I2C_ADDRESS_2
+- 0	1	0		0x62		I2C_ADDRESS_3
+- 0	1	1		0x63		I2C_ADDRESS_4
+- 1	0	0		0x64		I2C_ADDRESS_5
+- 1	0	1		0x65		I2C_ADDRESS_6
+- 1	1	0		0x66		I2C_ADDRESS_7
+- 1	1	1		0x67		I2C_ADDRESS_8
+```
+##### PCA9532 & PCA9552
+```
+A2, A1, A0		Address		Variable Name
+- 0	0	0		0x60		I2C_ADDRESS_1
+- 0	0	1		0x61		I2C_ADDRESS_2
+- 0	1	0		0x62		I2C_ADDRESS_3
+- 0	1	1		0x63		I2C_ADDRESS_4
+- 1	0	0		0x64		I2C_ADDRESS_5
+- 1	0	1		0x65		I2C_ADDRESS_6
+- 1	1	0		0x66		I2C_ADDRESS_7
+- 1	1	1		0x67		I2C_ADDRESS_8
 ```
 
-#####PCA9533/01 & PCA9553/01
+##### PCA9533/01 & PCA9553/01
 ```
 Address		Variable Name
--0x62		I2C_ADDRESS_3
+0x62		I2C_ADDRESS_3
 ```
 
-#####PCA9533/02 & PCA9553/02
+##### PCA9533/02 & PCA9553/02
 ```
 Address		Variable Name
--0x63		I2C_ADDRESS_4
+0x63		I2C_ADDRESS_4
 ```
 These chips has two banks of configuration of for the pulse width modulation.
 Each of the 8 Pins can be set to one of 4 settings, Off, ON Full, Pulse Width Modulation Configuration 1, Pulse Width Modulation Configuration 2
