@@ -13,12 +13,13 @@
 
 ### Use the Following Address:
 
-##### PCA9530 & PCA9550
-- A1 | Address | Variable Name
+#### PCA9530 & PCA9550
+A1 | Address | Variable Name
+------------ | -------------| -------------
 0 | 0x60 | I2C_ADDRESS_1
 1 | 0x61 | I2C_ADDRESS_2
 
-##### PCA9531 & PCA9551
+#### PCA9531 & PCA9551
 ```
 A2,		A1,		A0		Address		Variable Name
 0		0		0		0x60		I2C_ADDRESS_1
